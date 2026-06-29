@@ -197,5 +197,7 @@ export const categorias = [
   { id: "copas", label: "Copas", to: "/copas", hint: "Destilados premium" },
   { id: "cervezas", label: "Cervezas", to: "/cervezas", hint: "Tirada y botella" },
   { id: "refrescos", label: "Refrescos", to: "/refrescos", hint: "Bebidas sin alcohol" },
+  { id: "vinos", label: "Vinos", to: "/vinos", hint: "dale un toque dulzón" },
+  { id: "cubos de cerveza", label: "Cubos", to: "/cubos", hint: "Cubos para compartir" },
   { id: "recomendaciones", label: "Recomendaciones", to: "/recomendaciones", hint: "Lo que pide el local" },
 ] as const;
