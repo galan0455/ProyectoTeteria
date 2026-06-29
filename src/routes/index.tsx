@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Link } from "@tanstack/react-router";
 import { ChevronRight, Sparkles } from "lucide-react";
 import { categorias } from "@/data/menu";
+import logoUrl from "@/assets/bettore-logo.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -22,9 +23,13 @@ function Index() {
           <div className="text-[10px] uppercase tracking-[0.6em] text-gold-deep">
             Pub · Fuenlabrada
           </div>
-          <h1 className="mt-3 font-display text-7xl font-semibold leading-none gradient-gold-text">
-            Bettore
-          </h1>
+          <img
+            src={logoUrl}
+            alt="Bettore"
+            width={1280}
+            height={640}
+            className="mt-4 w-72 max-w-full neon-glow animate-neon-pulse"
+          />
           <div className="mt-4 flex w-40 items-center gap-2">
             <span className="hairline flex-1" />
             <Sparkles className="h-3 w-3 text-gold" />
@@ -38,7 +43,7 @@ function Index() {
         {/* Recomendación destacada */}
         <Link
           to="/recomendaciones"
-          className="group mt-10 block overflow-hidden rounded-2xl border border-gold/20 bg-gradient-to-br from-surface-2 to-surface-1 p-5 shadow-elegant transition active:scale-[0.99]"
+          className="group mt-10 block overflow-hidden rounded-2xl neon-border bg-gradient-to-br from-surface-2 to-surface-1 p-5 shadow-gold transition active:scale-[0.99]"
         >
           <div className="flex items-center justify-between gap-4">
             <div className="min-w-0">
@@ -66,15 +71,15 @@ function Index() {
               <Link
                 key={c.id}
                 to={c.to}
-                className="group relative flex aspect-square flex-col justify-between overflow-hidden rounded-2xl border border-border/60 bg-surface-1 p-4 transition active:scale-[0.97]"
+                className="group relative flex aspect-square flex-col justify-between overflow-hidden rounded-2xl border border-border/60 bg-surface-1 p-4 transition hover:shadow-gold active:scale-[0.97]"
                 style={{ animationDelay: `${i * 40}ms` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-gold/0 to-gold/0 transition group-hover:from-gold/5 group-hover:to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-transparent transition group-hover:from-[color:var(--neon-pink)]/10 group-hover:to-[color:var(--neon-violet)]/10" />
                 <div className="relative text-[10px] uppercase tracking-[0.3em] text-gold-deep">
                   0{i + 1}
                 </div>
                 <div className="relative">
-                  <div className="font-display text-2xl leading-tight text-foreground">
+                  <div className="font-display text-3xl leading-tight text-foreground">
                     {c.label}
                   </div>
                   <div className="mt-1 text-[11px] text-muted-foreground">{c.hint}</div>

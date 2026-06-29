@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft } from "lucide-react";
 import type { ReactNode } from "react";
+import logoUrl from "@/assets/bettore-logo.png";
 
 export function PageShell({
   title,
@@ -17,7 +18,7 @@ export function PageShell({
         <div className="mx-auto flex max-w-xl items-center gap-3 px-5 py-4">
           <Link
             to="/"
-            className="grid h-10 w-10 shrink-0 place-items-center rounded-full border border-gold/30 text-gold transition hover:bg-gold/10 active:scale-95"
+            className="grid h-10 w-10 shrink-0 place-items-center rounded-full neon-border text-gold transition hover:bg-gold/10 active:scale-95"
             aria-label="Volver al inicio"
           >
             <ArrowLeft className="h-4 w-4" />
@@ -28,7 +29,16 @@ export function PageShell({
               <p className="truncate text-xs text-muted-foreground">{subtitle}</p>
             )}
           </div>
-          <div className="font-display text-sm tracking-[0.3em] text-gold-deep">BETTORE</div>
+          <Link to="/" aria-label="Bettore" className="shrink-0">
+            <img
+              src={logoUrl}
+              alt="Bettore"
+              width={1280}
+              height={640}
+              loading="lazy"
+              className="h-7 w-auto neon-glow"
+            />
+          </Link>
         </div>
       </header>
       <main className="mx-auto max-w-xl px-5 pt-6 animate-fade-up">{children}</main>
