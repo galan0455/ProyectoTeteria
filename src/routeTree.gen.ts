@@ -9,14 +9,22 @@
 // Additionally, you should also exclude this file from your linter and/or formatter to prevent it from being checked or modified.
 
 import { Route as rootRouteImport } from './routes/__root'
+import { Route as VinosRouteImport } from './routes/vinos'
 import { Route as RefrescosRouteImport } from './routes/refrescos'
 import { Route as RecomendacionesRouteImport } from './routes/recomendaciones'
+import { Route as CubosRouteImport } from './routes/cubos'
 import { Route as CopasRouteImport } from './routes/copas'
 import { Route as CoctelesRouteImport } from './routes/cocteles'
 import { Route as CervezasRouteImport } from './routes/cervezas'
 import { Route as CachimbasRouteImport } from './routes/cachimbas'
+import { Route as BatidosRouteImport } from './routes/batidos'
 import { Route as IndexRouteImport } from './routes/index'
 
+const VinosRoute = VinosRouteImport.update({
+  id: '/vinos',
+  path: '/vinos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const RefrescosRoute = RefrescosRouteImport.update({
   id: '/refrescos',
   path: '/refrescos',
@@ -25,6 +33,11 @@ const RefrescosRoute = RefrescosRouteImport.update({
 const RecomendacionesRoute = RecomendacionesRouteImport.update({
   id: '/recomendaciones',
   path: '/recomendaciones',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CubosRoute = CubosRouteImport.update({
+  id: '/cubos',
+  path: '/cubos',
   getParentRoute: () => rootRouteImport,
 } as any)
 const CopasRoute = CopasRouteImport.update({
@@ -47,6 +60,11 @@ const CachimbasRoute = CachimbasRouteImport.update({
   path: '/cachimbas',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BatidosRoute = BatidosRouteImport.update({
+  id: '/batidos',
+  path: '/batidos',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
@@ -55,74 +73,102 @@ const IndexRoute = IndexRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/batidos': typeof BatidosRoute
   '/cachimbas': typeof CachimbasRoute
   '/cervezas': typeof CervezasRoute
   '/cocteles': typeof CoctelesRoute
   '/copas': typeof CopasRoute
+  '/cubos': typeof CubosRoute
   '/recomendaciones': typeof RecomendacionesRoute
   '/refrescos': typeof RefrescosRoute
+  '/vinos': typeof VinosRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/batidos': typeof BatidosRoute
   '/cachimbas': typeof CachimbasRoute
   '/cervezas': typeof CervezasRoute
   '/cocteles': typeof CoctelesRoute
   '/copas': typeof CopasRoute
+  '/cubos': typeof CubosRoute
   '/recomendaciones': typeof RecomendacionesRoute
   '/refrescos': typeof RefrescosRoute
+  '/vinos': typeof VinosRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/batidos': typeof BatidosRoute
   '/cachimbas': typeof CachimbasRoute
   '/cervezas': typeof CervezasRoute
   '/cocteles': typeof CoctelesRoute
   '/copas': typeof CopasRoute
+  '/cubos': typeof CubosRoute
   '/recomendaciones': typeof RecomendacionesRoute
   '/refrescos': typeof RefrescosRoute
+  '/vinos': typeof VinosRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
   fullPaths:
     | '/'
+    | '/batidos'
     | '/cachimbas'
     | '/cervezas'
     | '/cocteles'
     | '/copas'
+    | '/cubos'
     | '/recomendaciones'
     | '/refrescos'
+    | '/vinos'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
+    | '/batidos'
     | '/cachimbas'
     | '/cervezas'
     | '/cocteles'
     | '/copas'
+    | '/cubos'
     | '/recomendaciones'
     | '/refrescos'
+    | '/vinos'
   id:
     | '__root__'
     | '/'
+    | '/batidos'
     | '/cachimbas'
     | '/cervezas'
     | '/cocteles'
     | '/copas'
+    | '/cubos'
     | '/recomendaciones'
     | '/refrescos'
+    | '/vinos'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  BatidosRoute: typeof BatidosRoute
   CachimbasRoute: typeof CachimbasRoute
   CervezasRoute: typeof CervezasRoute
   CoctelesRoute: typeof CoctelesRoute
   CopasRoute: typeof CopasRoute
+  CubosRoute: typeof CubosRoute
   RecomendacionesRoute: typeof RecomendacionesRoute
   RefrescosRoute: typeof RefrescosRoute
+  VinosRoute: typeof VinosRoute
 }
 
 declare module '@tanstack/react-router' {
   interface FileRoutesByPath {
+    '/vinos': {
+      id: '/vinos'
+      path: '/vinos'
+      fullPath: '/vinos'
+      preLoaderRoute: typeof VinosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/refrescos': {
       id: '/refrescos'
       path: '/refrescos'
@@ -135,6 +181,13 @@ declare module '@tanstack/react-router' {
       path: '/recomendaciones'
       fullPath: '/recomendaciones'
       preLoaderRoute: typeof RecomendacionesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/cubos': {
+      id: '/cubos'
+      path: '/cubos'
+      fullPath: '/cubos'
+      preLoaderRoute: typeof CubosRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/copas': {
@@ -165,6 +218,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CachimbasRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/batidos': {
+      id: '/batidos'
+      path: '/batidos'
+      fullPath: '/batidos'
+      preLoaderRoute: typeof BatidosRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/': {
       id: '/'
       path: '/'
@@ -177,13 +237,26 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  BatidosRoute: BatidosRoute,
   CachimbasRoute: CachimbasRoute,
   CervezasRoute: CervezasRoute,
   CoctelesRoute: CoctelesRoute,
   CopasRoute: CopasRoute,
+  CubosRoute: CubosRoute,
   RecomendacionesRoute: RecomendacionesRoute,
   RefrescosRoute: RefrescosRoute,
+  VinosRoute: VinosRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
+
+import type { getRouter } from './router.tsx'
+import type { startInstance } from './start.ts'
+declare module '@tanstack/react-start' {
+  interface Register {
+    ssr: true
+    router: Awaited<ReturnType<typeof getRouter>>
+    config: Awaited<ReturnType<typeof startInstance.getOptions>>
+  }
+}

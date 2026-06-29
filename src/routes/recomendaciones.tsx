@@ -14,8 +14,8 @@ export const Route = createFileRoute("/recomendaciones")({
 });
 
 function RecomendacionesPage() {
-  const topCocktail = cocktails.find((c) => c.id === "negroni-dorato")!;
-  const topHookah = hookahs.find((h) => h.id === "bettore-gold")!;
+  const topCocktail = cocktails.find((c) => c.id === "sol-de-amalfi");
+const topHookah = hookahs.find((h) => h.id === "big-boy");
   const favs = cocktails.filter((c) => c.featured).slice(0, 3);
   const populares = hookahs.filter((h) => h.featured);
 

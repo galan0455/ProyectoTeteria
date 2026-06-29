@@ -71,18 +71,32 @@ function Index() {
               <Link
                 key={c.id}
                 to={c.to}
-                className="group relative flex aspect-square flex-col justify-between overflow-hidden rounded-2xl border border-border/60 bg-surface-1 p-4 transition hover:shadow-gold active:scale-[0.97]"
+                className="group relative flex aspect-square flex-col justify-between overflow-hidden rounded-2xl border border-border/60 p-4 transition active:scale-[0.97]"
                 style={{ animationDelay: `${i * 40}ms` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-br from-transparent to-transparent transition group-hover:from-[color:var(--neon-pink)]/10 group-hover:to-[color:var(--neon-violet)]/10" />
-                <div className="relative text-[10px] uppercase tracking-[0.3em] text-gold-deep">
-                  0{i + 1}
-                </div>
-                <div className="relative">
-                  <div className="font-display text-3xl leading-tight text-foreground">
+                {/* IMAGEN DE FONDO */}
+                <img
+                  src={c.image}
+                  alt={c.label}
+                  className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-110"
+                />
+
+                {/* OVERLAY OSCURO */}
+                <div className="absolute inset-0 bg-black/60 group-hover:bg-black/50 transition" />
+
+                {/* CONTENIDO */}
+                <div className="relative z-10">
+                  <div className="text-[10px] uppercase tracking-[0.3em] text-gold-deep">
+                    0{i + 1}
+                  </div>
+
+                  <div className="font-display text-3xl leading-tight text-white">
                     {c.label}
                   </div>
-                  <div className="mt-1 text-[11px] text-muted-foreground">{c.hint}</div>
+
+                  <div className="mt-1 text-[11px] text-white/70">
+                    {c.hint}
+                  </div>
                 </div>
               </Link>
             ))}
