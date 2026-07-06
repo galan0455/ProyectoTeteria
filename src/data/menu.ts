@@ -93,7 +93,7 @@ export const hookahs: Hookah[] = [
     flavors: ["frescas", "afrutadas"],
     intensity: 4,
     description: "Delicioso sabor a Sandia helada con menta",
-    price: "22€",
+    price: "12€",
     featured: true,
   },
   {
@@ -102,7 +102,7 @@ export const hookahs: Hookah[] = [
     flavors: ["afrutadas", "dulces"],
     intensity: 4,
     description: "Mezcla de frutas exóticas",
-    price: "16€",
+    price: "12€",
     featured: true,
   },
   {
@@ -111,7 +111,7 @@ export const hookahs: Hookah[] = [
     flavors: ["afrutadas", "frescas"],
     intensity: 3,
     description: "Mezcla intensa y cremosa de frutas del bosque y frambuesa, acompañada de un toque refrescante",
-    price: "16€",
+    price: "12€",
   },
   {
     id: "polar-mint",
@@ -119,7 +119,7 @@ export const hookahs: Hookah[] = [
     flavors: ["dulces","especiadas"],
     intensity: 3,
     description: "Ofrece una experiencia dulce y cremosa que recrea el sabor de los famosos bombones Raffaello.",
-    price: "15€",
+    price: "12€",
   },
   {
     id: "berry-kiss",
@@ -127,7 +127,7 @@ export const hookahs: Hookah[] = [
     flavors: ["afrutadas", "dulces"],
     intensity: 5,
     description: "Combina melones dulces con arándanos azules frescos.",
-    price: "16€",
+    price: "12€",
     featured: true,
   },
   {
@@ -136,7 +136,7 @@ export const hookahs: Hookah[] = [
     flavors: ["afrutadas", "premium"],
     intensity: 3,
     description: "Una mezcla tropical de maracuyá, melón, sandía y menta . Es refrescante y dulce a la vez.",
-    price: "20€",
+    price: "12€",
   },
   {
     id: "lemon-haze",
@@ -144,7 +144,7 @@ export const hookahs: Hookah[] = [
     flavors: ["especiadas", "dulces"],
     intensity: 4,
     description: "La tarta de queso de siempre",
-    price: "15€",
+    price: "12€",
   },
   {
     id: "spiced-oud",
@@ -152,7 +152,7 @@ export const hookahs: Hookah[] = [
     flavors: ["afrutadas", "premium"],
     intensity: 3,
     description: " Refrescante frescura con el hormigueo, sabor dulce y agrio de la pera espinosa.",
-    price: "20€",
+    price: "16€",
   },
   {
     id: "spiced-oud",
@@ -160,7 +160,7 @@ export const hookahs: Hookah[] = [
     flavors: ["frescas", "premium"],
     intensity: 5,
     description: "Intenso, herbáceo y dulce, caracterizado principalmente por una fuerte sensación de frescor",
-    price: "20€",
+    price: "12€",
   },
 ];
 
@@ -394,6 +394,12 @@ export const batidos: Drink[] = [
     id: "Kit Kat",
     name: "Kit Kat",
     description: "Batido de snack de Kit Kat",
+    price: "6,50€"
+  },
+  {
+    id: "Lotus",
+    name: "Lotus",
+    description: "Batido de la famosa galleta Lotus",
     price: "6,50€"
   },
   

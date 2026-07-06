@@ -53,7 +53,7 @@ function CachimbasPage() {
         <div className="absolute bottom-0 left-0 right-0 p-4">
           <div className="text-[10px] uppercase tracking-[0.4em] text-gold">La experiencia</div>
           <div className="font-display text-2xl text-foreground">
-            Mezclas creadas por nuestros maestros
+            Mezclas creadas por nuestros maestros 14€
           </div>
         </div>
       </div>
