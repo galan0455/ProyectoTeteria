@@ -3,6 +3,22 @@ import cocktail2 from "@/assets/cocktail-2.jpg";
 import cocktail3 from "@/assets/cocktail-3.jpg";
 import cocktail4 from "@/assets/cocktail-4.jpg";
 import cocktail5 from "@/assets/cocktail.jpg";
+import BatidoChoco from "@/assets/BatidoChoco.jpeg";
+import BatidoFresa from "@/assets/BatidoFresa.jpeg";
+import BatidoVainilla from "@/assets/BatidoVainilla.jpeg";
+import BatidoKitKat from "@/assets/BatidoKitKat.jpeg";
+import BatidoLotus from "@/assets/BatidoLotus.jpeg";
+import BatidoOreo from "@/assets/BatidoOreo.jpeg";
+
+import Cocoloco from "@/assets/Cocoloco.jpeg";
+import Margarita from "@/assets/Margarita.jpeg";
+import Mojito from "@/assets/Mojito.jpeg";
+import MojitoCoco from "@/assets/MojitoCoco.jpeg";
+import MojitoItaliano from "@/assets/MojitoItaliano.jpeg";
+import MojitoMango from "@/assets/MojitoMango.jpeg";
+import PiñaColada from "@/assets/PiñaColada.jpeg";
+import Bettisui from "@/assets/Bettisui.jpeg";
+import Caribeño from "@/assets/caribeño.jpeg";
 import batido from "@/assets/batidos.jpg";
 import cerveza from "@/assets/cerveza.jpg";
 import cubo from "@/assets/cubo.jpg";
@@ -31,37 +47,100 @@ export type Cocktail = {
 
 export const cocktails: Cocktail[] = [
   {
-    id: "sol-de-amalfi",
-    name: "Sol de Amalfi",
-    price: "8,30€",
-    image: cocktail1,
-    tagline: "Refrescante y cítrico. Una mezcla luminosa que evoca la costa italiana. Ligero, aromático y perfecta combinación de cítricos.",
-    ingredients: ["Limoncello", "ron", "sirope mandarina"],
-    profile: { sweetness: 2, alcohol: 3, freshness: 4 },
+    id: "cocoloco ",
+    name: "Cocoloco ",
+    price: "9€",
+    image: Cocoloco,
+    tagline: "Refrescante y tropical. Una mezcla luminosa que evoca al caribe. Ligero, aromático y perfecta combinación de sabores.",
+    ingredients: ["Ron añejo", "Licor de maracuyá", "Helado de coco", "Zumo de maracuyá"],
+    profile: { sweetness: 4, alcohol: 2, freshness: 4 },
     pairings: ["Cachimba Premium Black", "Tabla de quesos"],
     featured: true,
   },
   {
-    id: "rosa-bettore",
-    name: "Piña Limonada Colada",
+    id: "Bettisui ",
+    name: "Bettisui ",
     price: "8,30€",
-    image: cocktail2,
-    tagline: "Una reinterpretación elegante del clásico caribeño. La suavidad tropical del ron blanco se fusiona con la frescura cítrica de la crema de limoncello Limoncé, creando un equilibrio perfecto entre dulzura, acidez y cremosidad.",
-    ingredients: ["Ron blanco", "Limoncello", "Zumo de piña natural ", "puré de coco"],
-    profile: { sweetness: 4, alcohol: 3, freshness: 3 },
-    pairings: ["Cachimba Afrutada", "Frutos rojos"],
+    image: Bettisui,
+    tagline: "Dulce, fresco y con un final herbal que aporta personalidad a cada sorbo. Perfecto para quienes buscan un sabor vibrante y diferente.",
+    ingredients: ["Tequila fresa", "Pizca de jaggermaister", "Fresa "," Zumo de frutos rojos con açai"],
+    profile: { sweetness: 4, alcohol: 3, freshness: 4 },
+    pairings: ["Cachimba Premium Black", "Tabla de quesos"],
+    featured: true,
+  },
+  {
+    id: "caribeño",
+    name: "El Caribeño",
+    price: "8,30€",
+    image: Caribeño,
+    tagline: "Un viaje directo al Caribe en cada sorbo. La suavidad del ron añejo se fusiona con la cremosidad del coco, el dulzor natural de la piña y el toque exótico del maracuyá, creando un cóctel tropical, refrescante y lleno de sabor.",
+    ingredients: ["Ron añejo", "Coco", "Piña","maracuyá"],
+    profile: { sweetness: 4, alcohol: 3, freshness: 4 },
+    pairings: ["Cachimba Premium Black", "Tabla de quesos"],
+    featured: true,
+  },
+  {
+    id: "Piñada colada",
+    name: "Piñada colada",
+    price: "8,30€",
+    image: PiñaColada,
+    tagline: "Una versión tropical y cremosa de la clásica piña colada. El ron blanco se mezcla con crema de limón, puré de piña y puré de coco, mientras un delicado toque de canela aporta un final cálido y aromático.",
+    ingredients: ["Ron blanco", "Crema de limón", "Puré de piña","Puré de coco"],
+    profile: { sweetness: 5, alcohol: 2, freshness: 3 },
+    pairings: ["Cachimba Premium Black", "Tabla de quesos"],
     featured: true,
   },
   {
     id: "mojito-bettore",
     name: "Mojito Clásico ",
     price: "7,50€",
-    image: cocktail3,
+    image: Mojito,
     tagline: "Un cóctel icónico de la coctelería cubana, símbolo de frescura y equilibrio. El Mojito Clásico combina la intensidad del ron blanco con la acidez del limón, la dulzura del azúcar de caña y el frescor aromático de la hierbabuena. Completado con agua con gas o soda, ofrece una sensación ligera, viva y refrescante que lo convierte en un imprescindible en cualquier carta.",
     ingredients: ["Ron Havana", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Soda"],
     profile: { sweetness: 3, alcohol: 3, freshness: 5 },
     pairings: ["Cachimba Cítrica", "Nachos"],
-  }
+  },
+  {
+    id: "Margarita",
+    name: "Margarita",
+    price: "7,50€",
+    image: Margarita,
+    tagline: "Refrescante, cítrica y con el inconfundible toque salino en el borde de la copa, es la elección perfecta para los amantes de los cócteles tradicionales.",
+    ingredients: ["Tequila", "licor de naranja", "Zumo de lima"],
+    profile: { sweetness: 2, alcohol: 4, freshness: 2 },
+    pairings: ["Cachimba Cítrica", "Nachos"],
+  },
+  {
+    id: "Mojito italiano",
+    name: "Mojito italiano",
+    price: "8,30€",
+    image: MojitoItaliano,
+    tagline: "Una refrescante versión del clásico mojito con un toque italiano. La combinación de limón, hierbabuena y un delicado licor italiano crea un cóctel fresco, aromático y equilibrado, con un final suave y muy refrescante. Ideal para disfrutar en cualquier momento.",
+    ingredients: ["Ron Havana", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Soda","Licor italiano"],
+    profile: { sweetness: 2, alcohol: 3, freshness: 4 },
+    pairings: ["Cachimba Cítrica", "Nachos"],
+  },
+  {
+    id: "Mojito de coco",
+    name: "Mojito de coco",
+    price: "8,30€",
+    image: MojitoCoco,
+    tagline: "Una versión tropical del clásico mojito. La frescura de la hierbabuena y la lima se combina con la suavidad y cremosidad del coco, creando un cóctel equilibrado, refrescante y con un irresistible aire caribeño. Perfecto para quienes buscan un sabor exótico y diferente.",
+    ingredients: ["Ron Havana", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Soda","Crema de coco"],
+    profile: { sweetness: 3, alcohol: 3, freshness: 4 },
+    pairings: ["Cachimba Cítrica", "Nachos"],
+  },
+  {
+    id: "Mojito de Mango",
+    name: "Mojito de Mango",
+    price: "8,30€",
+    image: MojitoMango,
+    tagline: "La frescura del mojito clásico se une al intenso sabor tropical del mango. Una combinación de lima, hierbabuena y mango que da como resultado un cóctel dulce, refrescante y lleno de aroma, perfecto para disfrutar de un toque exótico en cada sorbo.",
+    ingredients: ["Ron Havana", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Soda","Zumo de mango"],
+    profile: { sweetness: 3, alcohol: 3, freshness: 4 },
+    pairings: ["Cachimba Cítrica", "Nachos"],
+  },
+  
 
 ];
 
@@ -227,11 +306,9 @@ export const copas: Drink[] = [
 ];
 
 export const cervezas: Drink[] = [
-  { id: "mahou-cinco", name: "Mahou 5 Estrellas", description: "Tercio 33cl.", price: "3,80€" },
+  { id: "Alhambra", name: "Alhambra", description: "Tercio 33cl.", price: "3,80€" },
   { id: "estrella-galicia", name: "Corona", description: "Tercio 33cl.", price: "3,80€" },
-  { id: "1906", name: "Heineken", description: "Tercio 33cl.", price: "3,80€" },
-  { id: "mahou-cinco", name: "Radler", description: "Tercio 33cl.", price: "3,80€" },
-  { id: "mahou-cinco", name: "0.0 Tostada", description: "Tercio 33cl.", price: "3,80€" },
+  { id: "Mahou roja", name: "Mahou roja", description: "Tercio 33cl.", price: "3,80€" },
 ];
 
 export const refrescos: Drink[] = [
@@ -365,44 +442,90 @@ export const vinos: Drink[] = [
   }
 ];
 
-export const batidos: Drink[] = [
+export const batidos = [
   {
-    id: "Fresa",
-    name: "Fresa",
-    description: "Batido de fresa.",
-    price: "5,50€"
-  },
-  {
-    id: "Vainilla",
-    name: "Vainilla",
-    description: "Batido de vainilla",
-    price: "5,50€"
-  },
-   {
-    id: "Chocolate",
-    name: "Chocolate",
-    description: "Batido de Chocolate",
-    price: "5,50€"
-  },
-   {
-    id: "Oreo",
-    name: "Oreo",
-    description: "Batido de galleta Oreo",
-    price: "6,50€"
-  },
-   {
-    id: "Kit Kat",
-    name: "Kit Kat",
-    description: "Batido de snack de Kit Kat",
-    price: "6,50€"
+    id: "oreo",
+    name: "Batido Oreo",
+    price: "6,50 €",
+    image: BatidoOreo,
+    description: "Cremoso batido de Oreo con nata montada y galleta triturada.",
+    ingredients: [
+      "Leche",
+      "Helado de vainilla",
+      "Oreo",
+      "Nata"
+    ],
   },
   {
-    id: "Lotus",
-    name: "Lotus",
-    description: "Batido de la famosa galleta Lotus",
-    price: "6,50€"
+    id: "kit-kat",
+    name: "Batido Kit Kat",
+    price: "6,50 €",
+    image: BatidoKitKat,
+    description:
+      "Un batido cremoso con todo el sabor del chocolate y el inconfundible toque crujiente de Kit Kat. Dulce, intenso e irresistible.",
+    ingredients: [
+      "Leche",
+      "Helado de vainilla",
+      "Kit Kat",
+      "Nata montada",
+    ],
   },
-  
+  {
+    id: "lotus",
+    name: "Batido Lotus",
+    price: "6,50 €",
+    image: BatidoLotus,
+    description:
+      "La cremosidad del helado se une al característico sabor caramelizado de las galletas Lotus para crear un batido único y delicioso.",
+    ingredients: [
+      "Leche",
+      "Helado de vainilla",
+      "Crema Lotus",
+      "Galleta Lotus",
+      "Nata montada",
+    ],
+  },
+  {
+    id: "chocolate",
+    name: "Batido de Chocolate",
+    price: "5,50 €",
+    image: BatidoChoco,
+    description:
+      "Un clásico para los amantes del cacao. Cremoso, intenso y coronado con nata para una experiencia irresistible.",
+    ingredients: [
+      "Leche",
+      "Helado de chocolate",
+      "Sirope de chocolate",
+      "Nata montada",
+    ],
+  },
+  {
+    id: "vainilla",
+    name: "Batido de Vainilla",
+    price: "5,50 €",
+    image: BatidoVainilla,
+    description:
+      "Suave, cremoso y con el delicado aroma de la vainilla. Un clásico atemporal perfecto para cualquier momento.",
+    ingredients: [
+      "Leche",
+      "Helado de vainilla",
+      "Nata montada",
+    ],
+  },
+  {
+    id: "fresa",
+    name: "Batido de Fresa",
+    price: "5,50 €",
+    image: BatidoFresa,
+    description:
+      "Refrescante y cremoso, elaborado con el dulce sabor de la fresa para un batido ligero, afrutado y delicioso.",
+    ingredients: [
+      "Leche",
+      "Helado de fresa",
+      "Sirope de fresa",
+      "Nata montada",
+    ],
+  },
 ];
 
 export const categorias = [

@@ -21,7 +21,7 @@ function CoctelesPage() {
             key={c.id}
             className="overflow-hidden rounded-3xl border border-border/60 bg-surface-1 shadow-elegant"
           >
-            <div className="relative aspect-[4/3] overflow-hidden">
+            <div className="relative aspect-[4/4] overflow-hidden">
               <img
                 src={c.image}
                 alt={c.name}
