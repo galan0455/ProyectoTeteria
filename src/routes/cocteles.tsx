@@ -70,20 +70,6 @@ function CoctelesPage() {
                 <Meter label="Alcohol" value={c.profile.alcohol} />
                 <Meter label="Frescura" value={c.profile.freshness} />
               </div>
-
-              <div>
-                <div className="mb-2 text-[10px] uppercase tracking-[0.3em] text-gold-deep">
-                  Marida bien con
-                </div>
-                <ul className="space-y-1 text-sm text-foreground/85">
-                  {c.pairings.map((p) => (
-                    <li key={p} className="flex items-center gap-2">
-                      <span className="h-1 w-1 rounded-full bg-gold" />
-                      {p}
-                    </li>
-                  ))}
-                </ul>
-              </div>
             </div>
           </article>
         ))}

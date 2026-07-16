@@ -47,12 +47,12 @@ export type Cocktail = {
 
 export const cocktails: Cocktail[] = [
   {
-    id: "cocoloco ",
+    id: "cocoloco",
     name: "Cocoloco ",
     price: "9€",
     image: Cocoloco,
     tagline: "Refrescante y tropical. Una mezcla luminosa que evoca al caribe. Ligero, aromático y perfecta combinación de sabores.",
-    ingredients: ["Ron añejo", "Licor de maracuyá", "Helado de coco", "Zumo de maracuyá"],
+    ingredients: ["Ron", "Licor de maracuyá", "Helado de coco", "Zumo de maracuyá"],
     profile: { sweetness: 4, alcohol: 2, freshness: 4 },
     pairings: ["Cachimba Premium Black", "Tabla de quesos"],
     featured: true,
@@ -74,7 +74,7 @@ export const cocktails: Cocktail[] = [
     price: "8,30€",
     image: Caribeño,
     tagline: "Un viaje directo al Caribe en cada sorbo. La suavidad del ron añejo se fusiona con la cremosidad del coco, el dulzor natural de la piña y el toque exótico del maracuyá, creando un cóctel tropical, refrescante y lleno de sabor.",
-    ingredients: ["Ron añejo", "Coco", "Piña","maracuyá"],
+    ingredients: ["Ron", "Coco", "Piña","maracuyá"],
     profile: { sweetness: 4, alcohol: 3, freshness: 4 },
     pairings: ["Cachimba Premium Black", "Tabla de quesos"],
     featured: true,
@@ -96,7 +96,7 @@ export const cocktails: Cocktail[] = [
     price: "7,50€",
     image: Mojito,
     tagline: "Un cóctel icónico de la coctelería cubana, símbolo de frescura y equilibrio. El Mojito Clásico combina la intensidad del ron blanco con la acidez del limón, la dulzura del azúcar de caña y el frescor aromático de la hierbabuena. Completado con agua con gas o soda, ofrece una sensación ligera, viva y refrescante que lo convierte en un imprescindible en cualquier carta.",
-    ingredients: ["Ron Havana", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Soda"],
+    ingredients: ["Ron", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Sprite"],
     profile: { sweetness: 3, alcohol: 3, freshness: 5 },
     pairings: ["Cachimba Cítrica", "Nachos"],
   },
@@ -116,7 +116,7 @@ export const cocktails: Cocktail[] = [
     price: "8,30€",
     image: MojitoItaliano,
     tagline: "Una refrescante versión del clásico mojito con un toque italiano. La combinación de limón, hierbabuena y un delicado licor italiano crea un cóctel fresco, aromático y equilibrado, con un final suave y muy refrescante. Ideal para disfrutar en cualquier momento.",
-    ingredients: ["Ron Havana", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Soda","Licor italiano"],
+    ingredients: ["Ron", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Sprite","Licor italiano"],
     profile: { sweetness: 2, alcohol: 3, freshness: 4 },
     pairings: ["Cachimba Cítrica", "Nachos"],
   },
@@ -126,7 +126,7 @@ export const cocktails: Cocktail[] = [
     price: "8,30€",
     image: MojitoCoco,
     tagline: "Una versión tropical del clásico mojito. La frescura de la hierbabuena y la lima se combina con la suavidad y cremosidad del coco, creando un cóctel equilibrado, refrescante y con un irresistible aire caribeño. Perfecto para quienes buscan un sabor exótico y diferente.",
-    ingredients: ["Ron Havana", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Soda","Crema de coco"],
+    ingredients: ["Ron", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Sprite","Crema de coco"],
     profile: { sweetness: 3, alcohol: 3, freshness: 4 },
     pairings: ["Cachimba Cítrica", "Nachos"],
   },
@@ -136,7 +136,7 @@ export const cocktails: Cocktail[] = [
     price: "8,30€",
     image: MojitoMango,
     tagline: "La frescura del mojito clásico se une al intenso sabor tropical del mango. Una combinación de lima, hierbabuena y mango que da como resultado un cóctel dulce, refrescante y lleno de aroma, perfecto para disfrutar de un toque exótico en cada sorbo.",
-    ingredients: ["Ron Havana", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Soda","Zumo de mango"],
+    ingredients: ["Ron", "Hierbabuena fresca", "Lima", "Azúcar de caña", "Sprite","Zumo de mango"],
     profile: { sweetness: 3, alcohol: 3, freshness: 4 },
     pairings: ["Cachimba Cítrica", "Nachos"],
   },
@@ -176,7 +176,7 @@ export const hookahs: Hookah[] = [
     featured: true,
   },
   {
-    id: "tropical-sunset",
+    id: "carnival",
     name: "carnival",
     flavors: ["afrutadas", "dulces"],
     intensity: 4,
@@ -185,7 +185,7 @@ export const hookahs: Hookah[] = [
     featured: true,
   },
   {
-    id: "citrus-storm",
+    id: "huracán",
     name: "huracán",
     flavors: ["afrutadas", "frescas"],
     intensity: 3,
@@ -193,7 +193,7 @@ export const hookahs: Hookah[] = [
     price: "12€",
   },
   {
-    id: "polar-mint",
+    id: "kaffayayo",
     name: "kaffayayo",
     flavors: ["dulces","especiadas"],
     intensity: 3,
@@ -201,7 +201,7 @@ export const hookahs: Hookah[] = [
     price: "12€",
   },
   {
-    id: "berry-kiss",
+    id: "⁠blue yellow",
     name: "⁠blue yellow",
     flavors: ["afrutadas", "dulces"],
     intensity: 5,
@@ -210,7 +210,7 @@ export const hookahs: Hookah[] = [
     featured: true,
   },
   {
-    id: "spiced-oud",
+    id: "love 66",
     name: "love 66",
     flavors: ["afrutadas", "premium"],
     intensity: 3,
@@ -218,7 +218,7 @@ export const hookahs: Hookah[] = [
     price: "12€",
   },
   {
-    id: "lemon-haze",
+    id: "white cake",
     name: "white cake",
     flavors: ["especiadas", "dulces"],
     intensity: 4,
@@ -226,15 +226,15 @@ export const hookahs: Hookah[] = [
     price: "12€",
   },
   {
-    id: "spiced-oud",
+    id: "kaktuz",
     name: "kaktuz",
-    flavors: ["afrutadas", "premium"],
+    flavors: ["citricas", "premium"],
     intensity: 3,
     description: " Refrescante frescura con el hormigueo, sabor dulce y agrio de la pera espinosa.",
     price: "16€",
   },
   {
-    id: "spiced-oud",
+    id: "menta",
     name: "menta",
     flavors: ["frescas", "premium"],
     intensity: 5,
@@ -248,67 +248,166 @@ export type Drink = {
   name: string;
   description?: string;
   price: string;
+  category: string;
 };
 
 export const copas: Drink[] = [
   // RON
-  { id: "ron-legendario", name: "Ron Legendario", description: "Ron dulce y aromático con notas de vainilla.", price: "8€" },
-  { id: "ron-barcelo", name: "Ron Barceló", description: "Ron dominicano equilibrado y suave.", price: "8€" },
-  { id: "ron-brugal", name: "Ron Brugal", description: "Ron ligero con matices de madera.", price: "8€" },
-  { id: "ron-cacique", name: "Ron Cacique", description: "Ron venezolano con carácter y cuerpo.", price: "8€" },
-  { id: "ron-cacique-500", name: "Ron Cacique 500", description: "Ron premium añejo con notas tostadas.", price: "9€" },
-  { id: "ron-brugal-extraviejo", name: "Brugal Extra Viejo", description: "Ron añejo con sabor profundo y equilibrado.", price: "9€" },
-  { id: "ron-zacapa", name: "Ron Zacapa", description: "Ron premium guatemalteco con notas de caramelo y madera.", price: "13€" },
+  { id: "ron-legendario", name: "Ron Legendario", description: "Ron dulce y aromático con notas de vainilla.", price: "8€",category: "Ron" },
+  { id: "ron-barcelo", name: "Ron Barceló", description: "Ron dominicano equilibrado y suave.", price: "8€",category: "Ron" },
+  { id: "ron-brugal", name: "Ron Brugal", description: "Ron ligero con matices de madera.", price: "8€",category: "Ron" },
+  { id: "ron-cacique", name: "Ron Cacique", description: "Ron venezolano con carácter y cuerpo.", price: "8€",category: "Ron" },
+  { id: "ron-cacique-500", name: "Ron Cacique 500", description: "Ron premium añejo con notas tostadas.", price: "9€",category: "Ron" },
+  { id: "ron-brugal-extraviejo", name: "Brugal Extra Viejo", description: "Ron añejo con sabor profundo y equilibrado.", price: "9€",category: "Ron" },
+  { id: "ron-zacapa", name: "Ron Zacapa", description: "Ron premium guatemalteco con notas de caramelo y madera.", price: "13€",category: "Ron" },
 
 
   // GINEBRA
-  { id: "gin-beefeater", name: "Beefeater", description: "Ginebra clásica inglesa con notas de enebro.", price: "8€" },
-  { id: "gin-seagrams", name: "Seagram's", description: "Ginebra suave con toque cítrico.", price: "8€" },
-  { id: "gin-larios", name: "Larios", description: "Ginebra mediterránea fresca y equilibrada.", price: "8€" },
-  { id: "gin-rives", name: "Rives", description: "Ginebra española aromática.", price: "8€" },
-  { id: "gin-bombay", name: "Bombay", description: "Ginebra premium con botánicos seleccionados.", price: "8€" },
-  { id: "gin-puerto-indias-fresa", name: "Puerto de Indias Fresa", description: "Ginebra afrutada con aroma dulce de fresa.", price: "8€" },
-  { id: "gin-puerto-indias-mango", name: "Puerto de Indias Mango", description: "Ginebra tropical con notas de mango.", price: "8€" },
-  { id: "gin-puerto-indias-melon", name: "Puerto de Indias Melón", description: "Ginebra fresca con sabor a melón.", price: "8€" },
-  { id: "gin-nordes", name: "Nordés", description: "Ginebra gallega floral y elegante.", price: "11€" },
-  { id: "gin-martin-miller", name: "Martin Miller's", description: "Ginebra premium fresca y refinada.", price: "11€" },
-  { id: "gin-gvine", name: "G'Vine", description: "Ginebra francesa floral con uva verde.", price: "13€" },
+  { id: "gin-beefeater", name: "Beefeater", description: "Ginebra clásica inglesa con notas de enebro.", price: "8€", category: "Ginebra" },
+  { id: "gin-seagrams", name: "Seagram's", description: "Ginebra suave con toque cítrico.", price: "8€", category: "Ginebra" },
+  { id: "gin-larios", name: "Larios", description: "Ginebra mediterránea fresca y equilibrada.", price: "8€", category: "Ginebra" },
+  { id: "gin-rives", name: "Rives", description: "Ginebra española aromática.", price: "8€", category: "Ginebra" },
+  { id: "gin-bombay", name: "Bombay", description: "Ginebra premium con botánicos seleccionados.", price: "8€", category: "Ginebra" },
+  { id: "gin-puerto-indias-fresa", name: "Puerto de Indias Fresa", description: "Ginebra afrutada con aroma dulce de fresa.", price: "8€", category: "Ginebra" },
+  { id: "gin-puerto-indias-mango", name: "Puerto de Indias Mango", description: "Ginebra tropical con notas de mango.", price: "8€", category: "Ginebra" },
+  { id: "gin-puerto-indias-melon", name: "Puerto de Indias Melón", description: "Ginebra fresca con sabor a melón.", price: "8€", category: "Ginebra" },
+  { id: "gin-nordes", name: "Nordés", description: "Ginebra gallega floral y elegante.", price: "11€", category: "Ginebra" },
+  { id: "gin-martin-miller", name: "Martin Miller's", description: "Ginebra premium fresca y refinada.", price: "11€", category: "Ginebra" },
+  { id: "gin-gvine", name: "G'Vine", description: "Ginebra francesa floral con uva verde.", price: "13€", category: "Ginebra" },
 
 
   // WHISKEY
-  { id: "whisky-red-label", name: "Red Label", description: "Whisky escocés intenso y especiado.", price: "8€" },
-  { id: "whisky-white-label", name: "White Label", description: "Whisky suave y equilibrado.", price: "8€" },
-  { id: "whisky-jameson", name: "Jameson", description: "Whisky irlandés suave con notas dulces.", price: "8€" },
-  { id: "whisky-cutty-sark", name: "Cutty Sark", description: "Whisky escocés ligero y fresco.", price: "8€" },
-  { id: "whisky-dyc", name: "DYC", description: "Whisky español clásico.", price: "8€" },
-  { id: "whisky-dyc-8", name: "DYC 8", description: "Whisky añejado con mayor cuerpo.", price: "8,5€" },
-  { id: "whisky-jb", name: "J&B", description: "Whisky escocés suave y afrutado.", price: "8€" },
-  { id: "whisky-ballantines", name: "Ballantine's", description: "Whisky escocés equilibrado y suave.", price: "8€" },
-  { id: "whisky-jack-manzana", name: "Jack Daniel's Apple", description: "Whisky americano con toque fresco de manzana.", price: "9,5€" },
-  { id: "whisky-jack-miel", name: "Jack Daniel's Honey", description: "Whisky americano dulce con miel.", price: "9,5€" },
-  { id: "whisky-black-label", name: "Black Label", description: "Whisky premium con notas ahumadas.", price: "11,5€" },
-  { id: "whisky-cardhu", name: "Cardhu", description: "Single malt suave y elegante.", price: "12€" },
-  { id: "whisky-macallan-12", name: "Macallan 12", description: "Single malt premium con notas de jerez.", price: "16,50€" },
-  { id: "whisky-lagavulin", name: "Lagavulin", description: "Whisky ahumado de gran personalidad.", price: "18€" },
-  { id: "whisky-blue-label", name: "Blue Label", description: "Whisky escocés ultra premium.", price: "35€" },
+  { id: "whisky-red-label", name: "Red Label", description: "Whisky escocés intenso y especiado.", price: "8€", category: "Whisky" },
+  { id: "whisky-white-label", name: "White Label", description: "Whisky suave y equilibrado.", price: "8€", category: "Whisky" },
+  { id: "whisky-jameson", name: "Jameson", description: "Whisky irlandés suave con notas dulces.", price: "8€", category: "Whisky" },
+  { id: "whisky-cutty-sark", name: "Cutty Sark", description: "Whisky escocés ligero y fresco.", price: "8€", category: "Whisky" },
+  { id: "whisky-dyc", name: "DYC", description: "Whisky español clásico.", price: "8€", category: "Whisky" },
+  { id: "whisky-dyc-8", name: "DYC 8", description: "Whisky añejado con mayor cuerpo.", price: "8,5€", category: "Whisky" },
+  { id: "whisky-jb", name: "J&B", description: "Whisky escocés suave y afrutado.", price: "8€", category: "Whisky" },
+  { id: "whisky-ballantines", name: "Ballantine's", description: "Whisky escocés equilibrado y suave.", price: "8€", category: "Whisky" },
+  { id: "whisky-jack-manzana", name: "Jack Daniel's Apple", description: "Whisky americano con toque fresco de manzana.", price: "9,5€", category: "Whisky" },
+  { id: "whisky-jack-miel", name: "Jack Daniel's Honey", description: "Whisky americano dulce con miel.", price: "9,5€", category: "Whisky" },
+  { id: "whisky-black-label", name: "Black Label", description: "Whisky premium con notas ahumadas.", price: "11,5€", category: "Whisky" },
+  { id: "whisky-cardhu", name: "Cardhu", description: "Single malt suave y elegante.", price: "12€", category: "Whisky" },
+  { id: "whisky-macallan-12", name: "Macallan 12", description: "Single malt premium con notas de jerez.", price: "16,50€", category: "Whisky" },
+  { id: "whisky-lagavulin", name: "Lagavulin", description: "Whisky ahumado de gran personalidad.", price: "18€", category: "Whisky" },
+  { id: "whisky-blue-label", name: "Blue Label", description: "Whisky escocés ultra premium.", price: "35€", category: "Whisky" },
 
 
   // VODKA
-  { id: "vodka-eristoff", name: "Eristoff", description: "Vodka limpio y equilibrado.", price: "8€" },
-  { id: "vodka-absolut", name: "Absolut", description: "Vodka sueco suave y versátil.", price: "8€" },
+  { id: "vodka-eristoff", name: "Eristoff", description: "Vodka limpio y equilibrado.", price: "8€", category: "Vodka" },
+  { id: "vodka-absolut", name: "Absolut", description: "Vodka sueco suave y versátil.", price: "8€", category: "Vodka" },
 
 
   // PREMIUM EXISTENTES
-  { id: "gin-hendricks", name: "Gin Hendrick's", description: "Pepino, rosa y tónica premium.", price: "9€" },
-  { id: "gin-tanqueray", name: "Gin Tanqueray Ten", description: "Cítricos frescos y enebro.", price: "9€" },
-  { id: "vodka-grey-goose", name: "Vodka Grey Goose", description: "Vodka premium francés de gran suavidad.", price: "10€" },
-  { id: "tequila-patron", name: "Tequila Patrón Silver", description: "Agave puro, perfil limpio.", price: "10€" },
+    {
+    id: "licor-baileys",
+    name: "Baileys",
+    description: "Crema irlandesa suave y cremosa.",
+    price: "6,5€",
+    category: "Licores",
+  },
+  {
+    id: "licor-jagermeister",
+    name: "Jägermeister",
+    description: "Licor alemán de hierbas con sabor intenso.",
+    price: "8€",
+    category: "Licores",
+  },
+  {
+    id: "licor-hierbas",
+    name: "Licor de Hierbas",
+    description: "Licor digestivo de hierbas aromáticas.",
+    price: "3,80€",
+    category: "Licores",
+  },
+  {
+    id: "martini-bianco",
+    name: "Martini Bianco",
+    description: "Vermut blanco italiano, suave y aromático.",
+    price: "5€",
+    category: "Licores",
+  },
+  {
+    id: "martini-rosso",
+    name: "Martini Rosso",
+    description: "Vermut rojo italiano con notas especiadas.",
+    price: "5€",
+    category: "Licores",
+  },
+  {
+    id: "crema-orujo",
+    name: "Crema de Orujo",
+    description: "Licor cremoso elaborado con orujo gallego.",
+    price: "3,80€",
+    category: "Licores",
+  },
+
+  // CHUPITOS
+  {
+    id: "chupito-tequila",
+    name: "Tequila",
+    description: "Chupito clásico.",
+    price: "3€",
+    category: "Chupitos",
+  },
+  {
+    id: "chupito-jager",
+    name: "Jägermeister",
+    description: "Licor de hierbas alemán.",
+    price: "3€",
+    category: "Chupitos",
+  },
+  {
+    id: "chupito-licor43",
+    name: "Licor 43",
+    description: "Licor español.",
+    price: "3€",
+    category: "Chupitos",
+  },
+  {
+    id: "chupito-ruavieja",
+    name: "Ruavieja",
+    description: "Licor de hierbas.",
+    price: "3€",
+    category: "Chupitos",
+  },
+  {
+    id: "chupito-orujo",
+    name: "Orujo",
+    description: "Aguardiente tradicional.",
+    price: "3€",
+    category: "Chupitos",
+  },
+  {
+    id: "chupito-pacharan",
+    name: "Pacharán",
+    description: "Licor de endrinas.",
+    price: "3€",
+    category: "Chupitos",
+  },
+  {
+    id: "chupito-absenta",
+    name: "Absenta",
+    description: "Licor anisado de alta graduación.",
+    price: "4€",
+    category: "Chupitos",
+  },
+  {
+    id: "chupito-vodka",
+    name: "Vodka",
+    description: "Vodka frío.",
+    price: "3€",
+    category: "Chupitos",
+  },
 ];
 
 export const cervezas: Drink[] = [
-  { id: "Alhambra", name: "Alhambra", description: "Tercio 33cl.", price: "3,80€" },
-  { id: "estrella-galicia", name: "Corona", description: "Tercio 33cl.", price: "3,80€" },
-  { id: "Mahou roja", name: "Mahou roja", description: "Tercio 33cl.", price: "3,80€" },
+  { id: "Alhambra", name: "Alhambra", description: "Tercio 33cl.", price: "4,20€", category: "Cerveza"  },
+  { id: "Corona", name: "Corona", description: "Tercio 33cl.", price: "3,80€", category: "Cerveza"   },
+  { id: "Mahou", name: "Mahou", description: "Tercio 33cl.", price: "3,80€", category: "Cerveza"  },
+  { id: "Radler", name: "Radler", description: "Tercio 33cl.", price: "3,80€", category: "Cerveza"  },
+  { id: "Mahou 0,0 tostada", name: "Mahou 0,0 tostada", description: "Tercio 33cl.", price: "3,80€", category: "Cerveza 0.0"  },
 ];
 
 export const refrescos: Drink[] = [
@@ -317,56 +416,80 @@ export const refrescos: Drink[] = [
     id: "redbull", 
     name: "Red Bull", 
     description: "Bebida energética original.", 
-    price: "3,50€" 
+    price: "3,50€",
+    category:"Refresco"
   },
 
   { 
     id: "coca-cola", 
     name: "Coca-Cola", 
     description: "Refresco de cola clásico.", 
-    price: "3,30€" 
+    price: "3,30€",
+    category:"Refresco" 
   },
 
   { 
     id: "fanta", 
     name: "Fanta", 
     description: "Refresco de naranja refrescante.", 
-    price: "3,30€" 
+    price: "3,30€",
+    category:"Refresco"
   },
 
   { 
     id: "schweppes", 
     name: "Schweppes", 
     description: "Tónica y refrescos Schweppes.", 
-    price: "3,30€" 
+    price: "3,30€",
+    category:"Refresco" 
   },
 
   { 
     id: "trina", 
     name: "Trina", 
     description: "Refresco suave sin burbujas.", 
-    price: "3,30€" 
+    price: "3,30€",
+    category:"Refresco" 
   },
 
   { 
     id: "aquarius", 
     name: "Aquarius", 
     description: "Bebida isotónica refrescante.", 
-    price: "3,30€" 
+    price: "3,30€",
+    category:"Refresco" 
   },
 
   { 
     id: "agua-con-gas", 
     name: "Agua con gas", 
     description: "Agua mineral con gas.", 
-    price: "3,30€" 
+    price: "3,30€",
+    category:"Refresco" 
   },
 
   { 
     id: "nestea-maracuya", 
     name: "Nestea Maracuyá", 
     description: "Té frío con sabor tropical.", 
-    price: "3,30€" 
+    price: "3,30€",
+    category:"Refresco" 
+  },
+  
+  { 
+    id: "nestea-limon", 
+    name: "Nestea Limon", 
+    description: "Té frío con un ligero toque a limon.", 
+    price: "3,30€",
+    category:"Refresco" 
+  },
+
+  { 
+    id: "nestea-frutos-rojos", 
+    name: "Nestea Frutos Rojos", 
+    description: "Té frío con sabor a frutos rojos.", 
+    price: "3,30€",
+    category:"Refresco" 
   },
 
 
@@ -375,28 +498,32 @@ export const refrescos: Drink[] = [
     id: "zumo-melocoton", 
     name: "Zumo de Melocotón", 
     description: "Zumo dulce y afrutado.", 
-    price: "2,50€" 
+    price: "2,50€",
+    category:"Zumo"  
   },
 
   { 
     id: "zumo-manzana", 
     name: "Zumo de Manzana", 
     description: "Zumo suave y refrescante.", 
-    price: "2,50€" 
+    price: "2,50€",
+    category:"Zumo"  
   },
 
   { 
     id: "zumo-naranja", 
     name: "Zumo de Naranja", 
     description: "Sabor natural y cítrico.", 
-    price: "2,50€" 
+    price: "2,50€",
+    category:"Zumo"  
   },
 
   { 
     id: "zumo-pina", 
     name: "Zumo de Piña", 
     description: "Zumo tropical dulce y fresco.", 
-    price: "2,50€" 
+    price: "2,50€",
+    category:"Zumo"  
   }
 ];
 
@@ -409,16 +536,11 @@ export const cubos: Drink[] = [
   },
   {
     id: "Cubo corona",
-    name: "Cubo Premium",
+    name: "Cubo Corona",
     description: "Selección de cervezas Corona 5u",
     price: "15,5€"
   },
-  {
-    id: "cubo heineken",
-    name: "Cubo Premium",
-    description: "Selección de cervezas Heineken 5u",
-    price: "14,30€"
-  }
+  
 ];
 
 export const vinos: Drink[] = [

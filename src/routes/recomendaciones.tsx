@@ -1,6 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell, Meter } from "@/components/PageShell";
-import { cocktails, hookahs } from "@/data/menu";
+import { cocktails, hookahs, batidos } from "@/data/menu";
 import { Crown, Flame, Heart } from "lucide-react";
 
 export const Route = createFileRoute("/recomendaciones")({
@@ -14,8 +14,12 @@ export const Route = createFileRoute("/recomendaciones")({
 });
 
 function RecomendacionesPage() {
-  const topCocktail = cocktails.find((c) => c.id === "sol-de-amalfi");
-const topHookah = hookahs.find((h) => h.id === "big-boy");
+  const topCocktail = cocktails.find((c) => c.id === "cocoloco");
+  const topHookah = hookahs.find((h) => h.id === "carnival");
+  const topShake = batidos.find((h) => h.id === "lotus");
+console.log("topCocktail", topCocktail);
+console.log("topHookah", topHookah);
+console.log("topHookah", topShake);
   const favs = cocktails.filter((c) => c.featured).slice(0, 3);
   const populares = hookahs.filter((h) => h.featured);
 
@@ -42,6 +46,25 @@ const topHookah = hookahs.find((h) => h.id === "big-boy");
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <div className="text-[10px] uppercase tracking-[0.3em] text-gold">#1 cóctel</div>
                 <div className="font-display text-2xl text-foreground">{topCocktail.name}</div>
+              </div>
+            </div>
+          </Link>
+          <Link
+            to="/batidos"
+            className="overflow-hidden rounded-3xl border border-gold/30 bg-surface-1 shadow-elegant transition active:scale-[0.99]"
+          >
+            <div className="relative aspect-[16/10]">
+              <img
+                src={topShake.image}
+                alt={topShake.name}
+                width={800}
+                height={500}
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-surface-1 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <div className="text-[10px] uppercase tracking-[0.3em] text-gold">#1 batido</div>
+                <div className="font-display text-2xl text-foreground">{topShake.name}</div>
               </div>
             </div>
           </Link>
