@@ -404,10 +404,10 @@ export const copas: Drink[] = [
 
 export const cervezas: Drink[] = [
   { id: "Alhambra", name: "Alhambra", description: "Tercio 33cl.", price: "4,20€", category: "Cerveza"  },
-  { id: "Corona", name: "Corona", description: "Tercio 33cl.", price: "3,80€", category: "Cerveza"   },
-  { id: "Mahou", name: "Mahou", description: "Tercio 33cl.", price: "3,80€", category: "Cerveza"  },
-  { id: "Radler", name: "Radler", description: "Tercio 33cl.", price: "3,80€", category: "Cerveza"  },
-  { id: "Mahou 0,0 tostada", name: "Mahou 0,0 tostada", description: "Tercio 33cl.", price: "3,80€", category: "Cerveza 0.0"  },
+  { id: "Corona", name: "Corona", description: "Tercio 33cl.", price: "4€", category: "Cerveza"   },
+  { id: "Mahou", name: "Mahou", description: "Tercio 33cl.", price: "4€", category: "Cerveza"  },
+  { id: "Radler", name: "Radler", description: "Tercio 33cl.", price: "4€", category: "Cerveza"  },
+  { id: "Mahou 0,0 tostada", name: "Mahou 0,0 tostada", description: "Tercio 33cl.", price: "4€", category: "Cerveza 0.0"  },
 ];
 
 export const refrescos: Drink[] = [
