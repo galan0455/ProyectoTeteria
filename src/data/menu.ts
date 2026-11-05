@@ -403,7 +403,7 @@ export const copas: Drink[] = [
 ];
 
 export const cervezas: Drink[] = [
-  { id: "Alhambra", name: "Alhambra", description: "Tercio 33cl.", price: "4,20€", category: "Cerveza"  },
+  { id: "Alhambra", name: "Alhambra", description: "Tercio 33cl.", price: "4,5€", category: "Cerveza"  },
   { id: "Corona", name: "Corona", description: "Tercio 33cl.", price: "4€", category: "Cerveza"   },
   { id: "Mahou", name: "Mahou", description: "Tercio 33cl.", price: "4€", category: "Cerveza"  },
   { id: "Radler", name: "Radler", description: "Tercio 33cl.", price: "4€", category: "Cerveza"  },
@@ -416,7 +416,7 @@ export const refrescos: Drink[] = [
     id: "redbull", 
     name: "Red Bull", 
     description: "Bebida energética original.", 
-    price: "3,50€",
+    price: "4€",
     category:"Refresco"
   },
 
@@ -424,7 +424,7 @@ export const refrescos: Drink[] = [
     id: "coca-cola", 
     name: "Coca-Cola", 
     description: "Refresco de cola clásico.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco" 
   },
 
@@ -432,7 +432,7 @@ export const refrescos: Drink[] = [
     id: "fanta", 
     name: "Fanta", 
     description: "Refresco de naranja refrescante.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco"
   },
 
@@ -440,7 +440,7 @@ export const refrescos: Drink[] = [
     id: "schweppes", 
     name: "Schweppes", 
     description: "Tónica y refrescos Schweppes.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco" 
   },
 
@@ -448,7 +448,7 @@ export const refrescos: Drink[] = [
     id: "trina", 
     name: "Trina", 
     description: "Refresco suave sin burbujas.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco" 
   },
 
@@ -456,7 +456,7 @@ export const refrescos: Drink[] = [
     id: "aquarius", 
     name: "Aquarius", 
     description: "Bebida isotónica refrescante.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco" 
   },
 
@@ -464,7 +464,7 @@ export const refrescos: Drink[] = [
     id: "agua-con-gas", 
     name: "Agua con gas", 
     description: "Agua mineral con gas.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco" 
   },
 
@@ -472,7 +472,7 @@ export const refrescos: Drink[] = [
     id: "nestea-maracuya", 
     name: "Nestea Maracuyá", 
     description: "Té frío con sabor tropical.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco" 
   },
   
@@ -480,7 +480,7 @@ export const refrescos: Drink[] = [
     id: "nestea-limon", 
     name: "Nestea Limon", 
     description: "Té frío con un ligero toque a limon.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco" 
   },
 
@@ -488,7 +488,7 @@ export const refrescos: Drink[] = [
     id: "nestea-frutos-rojos", 
     name: "Nestea Frutos Rojos", 
     description: "Té frío con sabor a frutos rojos.", 
-    price: "3,30€",
+    price: "3,50€",
     category:"Refresco" 
   },
 
@@ -532,13 +532,13 @@ export const cubos: Drink[] = [
     id: "Cubo mahou",
     name: "Cubo mahou",
     description: "Selección de cervezas Mahou 5u",
-    price: "15,5€"
+    price: "16€"
   },
   {
     id: "Cubo corona",
     name: "Cubo Corona",
     description: "Selección de cervezas Corona 5u",
-    price: "15,5€"
+    price: "16€"
   },
   
 ];
